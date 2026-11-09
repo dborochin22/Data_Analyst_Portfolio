@@ -49,7 +49,20 @@ Specific steps:
 | duration | 3 |
 
 ### Known data issues
-- Cast, director, and country tables are wide format. Reshaping them to long format (one row per title–person pair) would be easier to query in SQL or BI tools.
+- The cast, director, country, and genre CSVs in `data/cleaned/` are in wide format (one column per value). The long-format versions are built in MySQL (see below).
+
+## SQL (MySQL)
+
+The wide Excel tables are hard to count or filter in a BI tool, so I loaded them into a MySQL schema (`netflix_data`) and unpivoted each one into a long table with one row per title and value. Each script stacks the numbered columns with `UNION` and drops empty slots.
+
+| Script | Output table | Rows | Distinct values |
+|--------|--------------|-----:|----------------:|
+| [`01_create_listed_in_table.sql`](sql/01_create_listed_in_table.sql) | `netflix_listed_in` | 19,323 | 42 genres |
+| [`02_create_directors_table.sql`](sql/02_create_directors_table.sql) | `netflix_directors` | 6,977 | 4,992 directors |
+| [`03_create_countries_table.sql`](sql/03_create_countries_table.sql) | `countries_released` | 10,012 | 122 countries |
+| [`04_create_cast_table.sql`](sql/04_create_cast_table.sql) | `netflix_cast` | 64,124 | 36,430 cast members |
+
+These row counts are what the scripts should produce from the cleaned CSVs; I checked them independently in Python.
 
 ## Dashboards (Power BI)
 
