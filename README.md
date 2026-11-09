@@ -2,7 +2,7 @@
 
 Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysis projects, each with the business question, the data cleaning, the findings, and the tools I used.
 
-**Skills:** Excel (data cleaning) · Power BI (dashboards) · [SQL] · [Python] · Data storytelling
+**Skills:** Excel (data cleaning) · Power BI (dashboards) · MySQL · [Python] · Data storytelling
 
 **Contact:** [LinkedIn] · daniel.borochin@gmail.com
 
@@ -10,7 +10,7 @@ Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysi
 
 | # | Project | Tools | Highlight |
 |---|---------|-------|-----------|
-| 1 | [Netflix Content Analysis](project-01-netflix-content-analysis/) | Excel, Power BI | Cleaned 8,807 titles into linked tables and built Power BI dashboards; adult- and teen-rated titles make up 76% of the catalog |
+| 1 | [Netflix Content Analysis](project-01-netflix-content-analysis/) | Excel, MySQL, Power BI | Cleaned 8,807 titles into linked tables and built Power BI dashboards; adult- and teen-rated titles make up 76% of the catalog |
 
 ## Repo layout
 

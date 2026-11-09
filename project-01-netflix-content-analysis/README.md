@@ -16,7 +16,7 @@ Netflix has to decide where to invest in new content. This project uses the cata
 - **Raw file:** `data/raw/netflix_titles.csv`
 
 ## Tools
-Excel for cleaning and restructuring · [add the tools you used for analysis and dashboards]
+Excel (cleaning and restructuring) · MySQL · Power BI (dashboards)
 
 ## Data cleaning (Excel)
 
