@@ -1,6 +1,6 @@
 # Data Analysis Portfolio
 
-Hi, I'm **[Your Name]**, an aspiring data analyst. This repo collects my analysis projects, each with the business question, the data cleaning, the findings, and the tools I used.
+Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysis projects, each with the business question, the data cleaning, the findings, and the tools I used.
 
 **Skills:** Excel (data cleaning) · Power BI (dashboards) · [SQL] · [Python] · Data storytelling
 
