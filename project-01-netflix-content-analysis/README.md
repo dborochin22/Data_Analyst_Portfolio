@@ -98,4 +98,4 @@ Specific steps:
 ## How to reproduce
 1. Start from `data/raw/netflix_titles.csv`.
 2. Apply the cleaning steps above.
-3. Open the Power BI file ([add `.pbix` to `outputs/`]) and load the cleaned tables.
+3. Open [`outputs/Netflix_Dataset.pbix`](outputs/Netflix_Dataset.pbix) in Power BI Desktop (free). It contains both dashboard pages. If Power BI asks for the data location, point it at the files in `data/cleaned/`.
