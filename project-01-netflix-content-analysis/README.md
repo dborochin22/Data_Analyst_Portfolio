@@ -11,7 +11,7 @@ Netflix has to decide where to invest in new content. This project uses the cata
 **Scope note:** the dataset describes the *catalog*, not viewers. It has no viewership, subscriber, or age data, so "demographic" here means the *intended audience* signaled by each title's rating. The findings show where the catalog is concentrated, not what people watch. See Limitations.
 
 ## Data
-- **Source:** Netflix Movies and TV Shows dataset (Kaggle) — [confirm link]
+- **Source:** [Netflix Movies and TV Shows](https://www.kaggle.com/datasets/shivamb/netflix-shows) by shivamb on Kaggle. See the Kaggle page for the dataset's license and terms.
 - **Size:** 8,807 titles, 12 columns, titles added through 2021
 - **Raw file:** `data/raw/netflix_titles.csv`
 
