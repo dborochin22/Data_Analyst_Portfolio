@@ -1,0 +1,23 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Excel / Office temp and lock files
+~$*
+*.tmp
+
+# Power BI local cache (the .pbix itself is kept so others can open the dashboard)
+.pbi/
+*.pbids
+*.pbix.bak
+
+# Python / Jupyter (for future projects)
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# Editor settings
+.vscode/
+.idea/
