@@ -30,6 +30,8 @@ The view joins six tables (orders, order details, customers, products, employees
 
 Pulling in the sales rep's office lets the dashboard split sales by **sales office** as well as by **customer country**.
 
+*Data check:* 22 of the 122 customers have no assigned sales rep, so the view's inner join to `employees` could have dropped orders. None of those customers placed an order, so the view's total ($9,604,190.61) matches the raw sum of order lines exactly.
+
 ## Dashboard (Power BI)
 
 **Page 1: Sales overview.** Sales by product line, sales vs. cost of sale per product, sales by office, and sales by customer country. A date range and a product selector filter the page, and the Sales / Net Profit buttons switch the measure. The KPI cards show total sales, unique orders, and average order value.
@@ -42,13 +44,15 @@ Pulling in the sales rep's office lets the dashboard split sales by **sales offi
 
 ## Key findings
 
-*Figures are read from the dashboard over the full date range (Jan 2003 – May 2005).*
+*Figures cover the full date range (Jan 2003 – May 2005) and were checked against the `classicmodels` database.*
 
-1. **Total sales were $9.60M**, and net profit as calculated in the dashboard was $3.83M, roughly 40% of sales.
-2. **Two product lines make up about 59% of sales.** Classic Cars brought in $3.9M and Vintage Cars $1.8M. Motorcycles ($1.1M), Trucks and Buses ($1.0M), Planes ($1.0M), and Ships ($0.7M) follow, and Trains is the smallest.
+1. **Total sales were $9.60M across 326 orders, and net profit (sales minus cost of sales) was $3.83M,** a 39.8% margin.
+2. **Two product lines make up about 59% of sales.** Classic Cars brought in $3.85M (40%) and Vintage Cars $1.80M (19%). Motorcycles ($1.12M), Trucks and Buses ($1.02M), Planes ($0.95M), and Ships ($0.66M) follow, and Trains is the smallest at $0.19M (2%).
 3. **Sales peak every November.** November 2003 ($988K) and November 2004 ($979K) are the two biggest months, each roughly double the next-largest month in its year, and October is the next strongest in both years.
-4. **Sales are spread across five offices (USA, France, UK, Australia, Japan).** The two largest account for $3.48M and $3.08M, and the smallest for $0.46M.
-5. **Sales and cost of sale move almost in a straight line** at product level, so margin is fairly consistent across products and sales volume is what drives profit.
+4. **Sales are concentrated in two offices.** The USA office handled $3.48M and the France office $3.08M, together about 68% of sales. The UK ($1.44M), Australia ($1.15M), and Japan ($0.46M) offices handled the rest.
+5. **US customers are the biggest source of profit.** They generated $1.31M of the $3.83M net profit (34%). Spain ($440K) and France ($413K) follow.
+6. **Sales grew year over year.** 2004 sales were $4.52M, up 36% from $3.32M in 2003. 2005 covers only January to May ($1.77M).
+7. **Sales and cost of sale move almost in a straight line** at product level, so margin is fairly consistent across products and sales volume is what drives profit.
 
 ## Recommendations
 
@@ -62,6 +66,7 @@ Pulling in the sales rep's office lets the dashboard split sales by **sales offi
 ## Limitations
 
 - The data is a **sample database**, so the results illustrate the analysis and don't describe a real company.
+- **Order status isn't filtered.** The view includes cancelled orders ($239K, about 2.5% of sales) and orders that are on hold, in process, or disputed. Filtering to shipped and resolved orders would give a stricter revenue figure.
 - 2005 covers only part of the year (through May), so year-over-year comparisons for 2005 aren't like-for-like.
 - Net profit here is sales minus cost of sales only. It leaves out shipping, payroll, and overhead.
 
