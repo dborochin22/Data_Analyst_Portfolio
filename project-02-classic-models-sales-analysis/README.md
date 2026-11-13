@@ -12,7 +12,7 @@ Classic Models is a retailer of scale-model cars and other collectibles. Managem
 
 - **Source:** the `classicmodels` sample database from [MySQL Tutorial](https://www.mysqltutorial.org/getting-started-with-mysql/mysql-sample-database/). It covers customers, products, orders, order lines, employees, and offices.
 - **Period analyzed:** January 2003 to May 2005
-- **Not included in this repo:** the database is freely available at the link above, so I haven't copied it here. To reproduce the work, load it into MySQL first.
+- **In this repo:** [`data/classicmodels_script.sql`](data/classicmodels_script.sql) creates the `classicmodels` database and loads all eight tables (customers, employees, offices, order details, orders, payments, product lines, products). It's about 7,900 lines.
 
 ## Tools
 MySQL (joins, views, calculated fields) · Power BI (dashboards, DAX measures)
@@ -72,6 +72,6 @@ Pulling in the sales rep's office lets the dashboard split sales by **sales offi
 
 ## How to reproduce
 
-1. Load the `classicmodels` database into MySQL (link above).
+1. Run [`data/classicmodels_script.sql`](data/classicmodels_script.sql) in MySQL to create and load the `classicmodels` database.
 2. Run [`sql/02_create_sales_view_for_power_bi.sql`](sql/02_create_sales_view_for_power_bi.sql) to create the view.
 3. Open [`outputs/Classic_Models_Analysis.pbix`](outputs/Classic_Models_Analysis.pbix) in Power BI Desktop (free). If it asks for the data source, point it at your MySQL server and the `sales_data_for_power_bi` view.
