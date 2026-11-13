@@ -14,7 +14,7 @@ Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysi
 
 ## Repo layout
 
-Each project is self-contained: its own `README.md` (the case study), `data/`, `images/`, and the analysis files.
+Each project is self-contained: its own `README.md` (the case study), `data/`, `sql/`, `outputs/` (dashboards and screenshots), and the analysis files.
 
 ## License
 

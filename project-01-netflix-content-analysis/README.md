@@ -75,11 +75,11 @@ These row counts are what the scripts should produce from the cleaned CSVs; I ch
 
 **1. Catalog overview** – titles added over time, titles by rating, top 10 genres, and a map of countries.
 
-![Catalog overview dashboard](images/dashboard-overview.png)
+![Catalog overview dashboard](outputs/dashboard-overview.png)
 
 **2. Title lookup** – pick any title to see its release year, rating, description, categories, cast, director, and countries on a map.
 
-![Title lookup dashboard](images/dashboard-title-lookup.png)
+![Title lookup dashboard](outputs/dashboard-title-lookup.png)
 
 ## Key findings
 
