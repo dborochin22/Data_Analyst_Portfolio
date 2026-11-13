@@ -11,7 +11,7 @@ Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysi
 | **Power BI** | DAX measures (net profit, month-over-month %, year-to-date, average order value), slicers and interactive filtering, maps, donut, scatter, line, and decomposition-tree visuals, toggle buttons with bookmarks |
 | **Analysis** | Framing business questions, validating figures, turning findings into recommendations, data storytelling |
 
-**Contact:** [LinkedIn] · daniel.borochin@gmail.com
+**Contact:** linkedin.com/in/daniel-borochin/ · daniel.borochin@gmail.com
 
 ## Projects
 
