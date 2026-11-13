@@ -2,7 +2,14 @@
 
 Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysis projects, each with the business question, the data cleaning, the findings, and the tools I used.
 
-**Skills:** Excel (data cleaning) · Power BI (dashboards) · MySQL · [Python] · Data storytelling
+## Skills
+
+| Area | What I've used |
+|------|----------------|
+| **Excel** | Data cleaning (splitting multi-value columns, find & replace, trimming), formulas, handling missing values |
+| **SQL (MySQL)** | Multi-table joins, views, `CREATE TABLE AS`, `UNION` to unpivot wide tables, aggregates (`GROUP BY`, `SUM`, `COUNT`), window functions, `CASE WHEN`, date functions |
+| **Power BI** | DAX measures (net profit, month-over-month %, year-to-date, average order value), slicers and interactive filtering, maps, donut, scatter, line, and decomposition-tree visuals, toggle buttons with bookmarks |
+| **Analysis** | Framing business questions, validating figures, turning findings into recommendations, data storytelling |
 
 **Contact:** [LinkedIn] · daniel.borochin@gmail.com
 
