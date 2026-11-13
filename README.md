@@ -11,6 +11,7 @@ Hi, I'm Daniel Borochin, an aspiring data analyst. This repo collects my analysi
 | # | Project | Tools | Highlight |
 |---|---------|-------|-----------|
 | 1 | [Netflix Content Analysis](project-01-netflix-content-analysis/) | Excel, MySQL, Power BI | Cleaned 8,807 titles into linked tables and built Power BI dashboards; adult- and teen-rated titles make up 76% of the catalog |
+| 2 | [Classic Models Sales Analysis](project-02-classic-models-sales-analysis/) | MySQL, Power BI | Built a MySQL view and two-page Power BI dashboard; Classic and Vintage Cars drive ~59% of $9.6M in sales, with a sharp Q4 peak |
 
 ## Repo layout
 
