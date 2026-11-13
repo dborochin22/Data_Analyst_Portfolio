@@ -64,6 +64,13 @@ The wide Excel tables are hard to count or filter in a BI tool, so I loaded them
 
 These row counts are what the scripts should produce from the cleaned CSVs; I checked them independently in Python.
 
+**Analysis queries**
+
+| Query | What it answers | Key result |
+|-------|-----------------|------------|
+| [`05_num_titles_added_per_year.sql`](sql/05_num_titles_added_per_year.sql) | How many movies and TV shows were added each year? | Additions peaked in 2019 (1,424 movies, 592 TV shows); 2021 is a partial year |
+| [`06_audience_share_by_rating.sql`](sql/06_audience_share_by_rating.sql) | What share of the catalog does each audience segment hold? | Adult 45.5%, Teen 30.1%, Older kids/Family 16.9%, All kids 6.4% |
+
 ## Dashboards (Power BI)
 
 **1. Catalog overview** – titles added over time, titles by rating, top 10 genres, and a map of countries.
